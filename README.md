@@ -18,7 +18,7 @@ You might want to start with fresh install of your baseline distro. For our exam
 Next create an export image of your Linux Distro. This image will be used to create the multiple instances of same Linux Distro.
  1. Open a new command prompt or a new Powershell.
  1. Run the command  ``` wsl --list```  to view a list of Windows Subsystem for Linux Distributions installed on your computer. For example on my computer, it would be “Ubuntu-20.04”.
- 1. Run the command ``` wsl — export <DistributionName> <FileName>```  in mycase  ```wsl — export Ubuntu-20.04 rootfs.tar.gz``` to export your Linux distros to a TAR file. This will create a file entitled "rootfs.tar.gz" on your computer in the current path.
+ 1. Run the command ``` wsl --export <DistributionName> <FileName>```  in mycase  ```wsl — export Ubuntu-20.04 rootfs.tar.gz``` to export your Linux distros to a TAR file. This will create a file entitled "rootfs.tar.gz" on your computer in the current path.
  1. Copy the newly created file named “roofts.tar.gz” to your desired directory. For example on my computer, I have copied the file to c:\linux\ubuntu-20.04.clean directory.
  
  ## Use the wsldl tool to run mutliple instances of same distro
